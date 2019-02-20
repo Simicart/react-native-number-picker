@@ -31,7 +31,9 @@ RCT_EXPORT_METHOD(createDialog:(NSDictionary *)indic createDialog:(RCTResponseSe
     }
     
     ActionSheetStringPicker* qtyPicker = [[ActionSheetStringPicker alloc]initWithTitle:@"" rows:qtyArray initialSelection:selectedValue target:self successAction:@selector(didSelectValue:element:) cancelAction:@selector(cancelActionSheet:) origin:self];
-    [qtyPicker showActionSheetPicker];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [qtyPicker showActionSheetPicker];
+    });
 }
 
 - (void)didSelectValue:(NSNumber *)selectedIndex element:(id)element
@@ -43,7 +45,8 @@ RCT_EXPORT_METHOD(createDialog:(NSDictionary *)indic createDialog:(RCTResponseSe
 }
 
 -(void) cancelActionSheet:(id)sender{
-    onCancelClick(@[[NSNull null], nil])
+    NSArray *events = @[];
+    onCancelClick(@[[NSNull null], events]);
 }
 
 @end
