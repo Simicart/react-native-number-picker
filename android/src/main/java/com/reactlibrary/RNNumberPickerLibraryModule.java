@@ -17,6 +17,8 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReadableMap;
 
+import java.lang.reflect.Array;
+
 public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
 
     private static final String MIN_VALUE = "minValue";
@@ -98,7 +100,9 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
                 public void onClick(View v) {
                     String qtyPicked = String.valueOf(numberPicker.getValue() + 1);
                     if(onDoneClick != null) {
-                        onDoneClick.invoke(qtyPicked);
+                        String[] arr = new String[1];
+                        arr[0] = qtyPicked;
+                        onDoneClick.invoke(arr);
                     }
                     dialog.dismiss();
                 }
