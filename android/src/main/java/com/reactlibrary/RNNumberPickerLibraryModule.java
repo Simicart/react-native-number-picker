@@ -102,7 +102,7 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
                     if(onDoneClick != null) {
                         String[] arr = new String[1];
                         arr[0] = qtyPicked;
-                        onDoneClick.invoke(arr);
+                        onDoneClick.invoke(null, arr);
                     }
                     dialog.dismiss();
                 }
@@ -124,7 +124,7 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
                 @Override
                 public void onClick(View v) {
                     if(onCancelClick != null) {
-                        onCancelClick.invoke();
+                        onCancelClick.invoke(null, new String[1]);
                     }
                     dialog.dismiss();
                 }
