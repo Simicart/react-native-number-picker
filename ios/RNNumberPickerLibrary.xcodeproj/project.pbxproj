@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		216D98C5221D3DFF00328EF2 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98B3221D3DFF00328EF2 /* ActionSheetDatePicker.m */; };
+		216D98C6221D3DFF00328EF2 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98B5221D3DFF00328EF2 /* ActionSheetLocalePicker.m */; };
+		216D98C7221D3DFF00328EF2 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98B9221D3DFF00328EF2 /* ActionSheetDistancePicker.m */; };
+		216D98C8221D3DFF00328EF2 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98BA221D3DFF00328EF2 /* ActionSheetCustomPicker.m */; };
+		216D98C9221D3DFF00328EF2 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98BC221D3DFF00328EF2 /* SWActionSheet.m */; };
+		216D98CA221D3DFF00328EF2 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98BE221D3DFF00328EF2 /* ActionSheetStringPicker.m */; };
+		216D98CB221D3DFF00328EF2 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98BF221D3DFF00328EF2 /* DistancePickerView.m */; };
+		216D98CC221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98C0221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.m */; };
+		216D98CD221D3DFF00328EF2 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98C1221D3DFF00328EF2 /* AbstractActionSheetPicker.m */; };
+		3DDBE5AEF53B47E4AB7C9BFA /* libPods-RNNumberPickerLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FF35E9E15B644D24DCC4E4 /* libPods-RNNumberPickerLibrary.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNNumberPickerLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNNumberPickerLibrary.m */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +34,31 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNNumberPickerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNNumberPickerLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		216D98B1221D3DFF00328EF2 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		216D98B2221D3DFF00328EF2 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		216D98B3221D3DFF00328EF2 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		216D98B4221D3DFF00328EF2 /* SWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWActionSheet.h; sourceTree = "<group>"; };
+		216D98B5221D3DFF00328EF2 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		216D98B6221D3DFF00328EF2 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		216D98B7221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
+		216D98B8221D3DFF00328EF2 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
+		216D98B9221D3DFF00328EF2 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		216D98BA221D3DFF00328EF2 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		216D98BB221D3DFF00328EF2 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		216D98BC221D3DFF00328EF2 /* SWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWActionSheet.m; sourceTree = "<group>"; };
+		216D98BD221D3DFF00328EF2 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		216D98BE221D3DFF00328EF2 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		216D98BF221D3DFF00328EF2 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
+		216D98C0221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
+		216D98C1221D3DFF00328EF2 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		216D98C2221D3DFF00328EF2 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		216D98C3221D3DFF00328EF2 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
+		216D98C4221D3DFF00328EF2 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		4F7AD268C49F2EF59C2D6887 /* Pods-RNNumberPickerLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNNumberPickerLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNNumberPickerLibrary/Pods-RNNumberPickerLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNNumberPickerLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNumberPickerLibrary.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNNumberPickerLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNumberPickerLibrary.m; sourceTree = "<group>"; };
+		CA0C84009A6B0A3ACFDC9346 /* Pods-RNNumberPickerLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNNumberPickerLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNNumberPickerLibrary/Pods-RNNumberPickerLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		F5FF35E9E15B644D24DCC4E4 /* libPods-RNNumberPickerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNNumberPickerLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDBE5AEF53B47E4AB7C9BFA /* libPods-RNNumberPickerLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +81,60 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		216D98B0221D3DFF00328EF2 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				216D98B1221D3DFF00328EF2 /* ActionSheetCustomPicker.h */,
+				216D98B2221D3DFF00328EF2 /* ActionSheetStringPicker.h */,
+				216D98B3221D3DFF00328EF2 /* ActionSheetDatePicker.m */,
+				216D98B4221D3DFF00328EF2 /* SWActionSheet.h */,
+				216D98B5221D3DFF00328EF2 /* ActionSheetLocalePicker.m */,
+				216D98B6221D3DFF00328EF2 /* AbstractActionSheetPicker.h */,
+				216D98B7221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.h */,
+				216D98B8221D3DFF00328EF2 /* DistancePickerView.h */,
+				216D98B9221D3DFF00328EF2 /* ActionSheetDistancePicker.m */,
+				216D98BA221D3DFF00328EF2 /* ActionSheetCustomPicker.m */,
+				216D98BB221D3DFF00328EF2 /* ActionSheetCustomPickerDelegate.h */,
+				216D98BC221D3DFF00328EF2 /* SWActionSheet.m */,
+				216D98BD221D3DFF00328EF2 /* ActionSheetDatePicker.h */,
+				216D98BE221D3DFF00328EF2 /* ActionSheetStringPicker.m */,
+				216D98BF221D3DFF00328EF2 /* DistancePickerView.m */,
+				216D98C0221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.m */,
+				216D98C1221D3DFF00328EF2 /* AbstractActionSheetPicker.m */,
+				216D98C2221D3DFF00328EF2 /* ActionSheetLocalePicker.h */,
+				216D98C3221D3DFF00328EF2 /* ActionSheetPicker.h */,
+				216D98C4221D3DFF00328EF2 /* ActionSheetDistancePicker.h */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				216D98B0221D3DFF00328EF2 /* Pickers */,
 				B3E7B5881CC2AC0600A0062D /* RNNumberPickerLibrary.h */,
 				B3E7B5891CC2AC0600A0062D /* RNNumberPickerLibrary.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				F11815E88C0F5605040CABA0 /* Pods */,
+				B289B9832BB3168FA61A69CE /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		B289B9832BB3168FA61A69CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF35E9E15B644D24DCC4E4 /* libPods-RNNumberPickerLibrary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F11815E88C0F5605040CABA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F7AD268C49F2EF59C2D6887 /* Pods-RNNumberPickerLibrary.debug.xcconfig */,
+				CA0C84009A6B0A3ACFDC9346 /* Pods-RNNumberPickerLibrary.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +144,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNNumberPickerLibrary" */;
 			buildPhases = (
+				00CB83CF2367F582100791BB /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -107,12 +189,46 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00CB83CF2367F582100791BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNNumberPickerLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216D98C6221D3DFF00328EF2 /* ActionSheetLocalePicker.m in Sources */,
+				216D98CD221D3DFF00328EF2 /* AbstractActionSheetPicker.m in Sources */,
+				216D98C8221D3DFF00328EF2 /* ActionSheetCustomPicker.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNNumberPickerLibrary.m in Sources */,
+				216D98CB221D3DFF00328EF2 /* DistancePickerView.m in Sources */,
+				216D98C7221D3DFF00328EF2 /* ActionSheetDistancePicker.m in Sources */,
+				216D98CA221D3DFF00328EF2 /* ActionSheetStringPicker.m in Sources */,
+				216D98C5221D3DFF00328EF2 /* ActionSheetDatePicker.m in Sources */,
+				216D98CC221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.m in Sources */,
+				216D98C9221D3DFF00328EF2 /* SWActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +318,10 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7AD268C49F2EF59C2D6887 /* Pods-RNNumberPickerLibrary.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
@@ -218,6 +335,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0C84009A6B0A3ACFDC9346 /* Pods-RNNumberPickerLibrary.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
