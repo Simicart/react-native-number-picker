@@ -1,6 +1,8 @@
 
 # react-native-number-picker-library
 
+A Native number picker for both Android & iOS
+
 ## Getting started
 
 `$ npm install react-native-number-picker-library --save`
@@ -34,20 +36,36 @@
       compile project(':react-native-number-picker-library')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNNumberPickerLibrary.sln` in `node_modules/react-native-number-picker-library/windows/RNNumberPickerLibrary.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Number.Picker.Library.RNNumberPickerLibrary;` to the usings at the top of the file
-  - Add `new RNNumberPickerLibraryPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
 
 ## Usage
 ```javascript
 import RNNumberPickerLibrary from 'react-native-number-picker-library';
 
-// TODO: What to do with the module?
-RNNumberPickerLibrary;
+//Method createDialog(objectForConfig, callBackForDoneClick, callbackForCancelClick)
+RNNumberPickerLibrary.createDialog(
+              {
+                minValue: 0,
+                maxValue: 100,
+                selectedValue: 10,
+                doneText: 'Done',                // only for Android
+                doneTextColor: '#000000',        // only for Android
+                cancelText: 'Cancel',            // only for Android
+                cancelTextColor: '#000000'       // only for Android
+              },
+              (error, data) => {
+                if (error) {
+                  console.error(error);
+                } else {
+                  console.log(events);
+                }
+              },
+              (error, data) => {
+                if (error) {
+                  console.error(error);
+                } else {
+                  console.log(events);
+                }
+              }
+            );
 ```
   
