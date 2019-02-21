@@ -16,7 +16,6 @@
 		216D98CB221D3DFF00328EF2 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98BF221D3DFF00328EF2 /* DistancePickerView.m */; };
 		216D98CC221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98C0221D3DFF00328EF2 /* ActionSheetMultipleStringPicker.m */; };
 		216D98CD221D3DFF00328EF2 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D98C1221D3DFF00328EF2 /* AbstractActionSheetPicker.m */; };
-		3DDBE5AEF53B47E4AB7C9BFA /* libPods-RNNumberPickerLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FF35E9E15B644D24DCC4E4 /* libPods-RNNumberPickerLibrary.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNNumberPickerLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNNumberPickerLibrary.m */; };
 /* End PBXBuildFile section */
 
@@ -54,11 +53,8 @@
 		216D98C2221D3DFF00328EF2 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetLocalePicker.h; sourceTree = "<group>"; };
 		216D98C3221D3DFF00328EF2 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
 		216D98C4221D3DFF00328EF2 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
-		4F7AD268C49F2EF59C2D6887 /* Pods-RNNumberPickerLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNNumberPickerLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNNumberPickerLibrary/Pods-RNNumberPickerLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNNumberPickerLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNumberPickerLibrary.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNNumberPickerLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNumberPickerLibrary.m; sourceTree = "<group>"; };
-		CA0C84009A6B0A3ACFDC9346 /* Pods-RNNumberPickerLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNNumberPickerLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNNumberPickerLibrary/Pods-RNNumberPickerLibrary.release.xcconfig"; sourceTree = "<group>"; };
-		F5FF35E9E15B644D24DCC4E4 /* libPods-RNNumberPickerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNNumberPickerLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDBE5AEF53B47E4AB7C9BFA /* libPods-RNNumberPickerLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +110,6 @@
 				B3E7B5881CC2AC0600A0062D /* RNNumberPickerLibrary.h */,
 				B3E7B5891CC2AC0600A0062D /* RNNumberPickerLibrary.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				F11815E88C0F5605040CABA0 /* Pods */,
 				B289B9832BB3168FA61A69CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -123,18 +117,8 @@
 		B289B9832BB3168FA61A69CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5FF35E9E15B644D24DCC4E4 /* libPods-RNNumberPickerLibrary.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F11815E88C0F5605040CABA0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4F7AD268C49F2EF59C2D6887 /* Pods-RNNumberPickerLibrary.debug.xcconfig */,
-				CA0C84009A6B0A3ACFDC9346 /* Pods-RNNumberPickerLibrary.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,18 +182,16 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNNumberPickerLibrary-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -318,7 +300,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F7AD268C49F2EF59C2D6887 /* Pods-RNNumberPickerLibrary.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,7 +316,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA0C84009A6B0A3ACFDC9346 /* Pods-RNNumberPickerLibrary.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
