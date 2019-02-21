@@ -16,6 +16,8 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.bridge.WritableArray;
+import com.facebook.react.bridge.WritableNativeArray;
 
 import java.lang.reflect.Array;
 
@@ -100,9 +102,9 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
                 public void onClick(View v) {
                     String qtyPicked = String.valueOf(numberPicker.getValue() + 1);
                     if(onDoneClick != null) {
-                        String[] arr = new String[1];
-                        arr[0] = qtyPicked;
-                        onDoneClick.invoke(null, arr);
+                        WritableArray array = new WritableNativeArray();
+                        array.pushString(qtyPicked);
+                        onDoneClick.invoke(null, array);
                     }
                     dialog.dismiss();
                 }
@@ -124,7 +126,7 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
                 @Override
                 public void onClick(View v) {
                     if(onCancelClick != null) {
-                        onCancelClick.invoke(null, new String[1]);
+                        onCancelClick.invoke(null, new WritableNativeArray());
                     }
                     dialog.dismiss();
                 }
