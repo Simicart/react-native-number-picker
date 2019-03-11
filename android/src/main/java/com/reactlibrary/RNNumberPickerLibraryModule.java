@@ -30,6 +30,7 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
     private static final String DONE_TEXT_COLOR = "doneTextColor";
     private static final String CANCEL_TEXT = "cancelText";
     private static final String CANCEL_TEXT_COLOR = "cancelTextColor";
+    private static final String ARRAY_VALUE = "arrayValue";
 
     private final ReactApplicationContext reactContext;
     private Dialog dialog;
