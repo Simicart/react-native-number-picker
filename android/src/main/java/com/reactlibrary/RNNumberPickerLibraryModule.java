@@ -33,6 +33,8 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
     private Dialog dialog;
+    private String[] arrayString;
+    private boolean isArray = false;
 
     public RNNumberPickerLibraryModule(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -68,17 +70,31 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
             numberPicker.setWrapSelectorWheel(false);
             numberPicker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
 
-            int minValue = 0;
-            if(options.hasKey(MIN_VALUE)) {
-                minValue = options.getInt(MIN_VALUE);
-            }
-            numberPicker.setMinValue(minValue);
+            if (options.hasKey(ARRAY_VALUE)){
+                isArray = true;
+                ReadableArray array = options.getArray(ARRAY_VALUE);
+                ArrayList<Object> arrayList = array.toArrayList();
+                arrayString = new String[arrayList.size()];
 
-            int maxValue = 9999;
-            if(options.hasKey(MAX_VALUE)) {
-                maxValue = options.getInt(MAX_VALUE);
+                for (int i = 0; i < arrayList.size(); i++){
+                    arrayString[i] = String.valueOf(((Double) arrayList.get(i)).intValue());
+                }
+                numberPicker.setMinValue(0);
+                numberPicker.setMaxValue(arrayList.size()-1);
+                numberPicker.setDisplayedValues(arrayString);
+            }else {
+                int minValue = 0;
+                if(options.hasKey(MIN_VALUE)) {
+                    minValue = options.getInt(MIN_VALUE);
+                }
+                numberPicker.setMinValue(minValue);
+
+                int maxValue = 9999;
+                if(options.hasKey(MAX_VALUE)) {
+                    maxValue = options.getInt(MAX_VALUE);
+                }
+                numberPicker.setMaxValue(maxValue);
             }
-            numberPicker.setMaxValue(maxValue);
 
             if(options.hasKey(SELECTED_VALUE)) {
                 int selectedValue = options.getInt(SELECTED_VALUE);
@@ -101,6 +117,9 @@ public class RNNumberPickerLibraryModule extends ReactContextBaseJavaModule {
                 @Override
                 public void onClick(View v) {
                     String qtyPicked = String.valueOf(numberPicker.getValue() + 1);
+                    if (isArray == true){
+                        qtyPicked = arrayString[numberPicker.getValue()];
+                    }
                     if(onDoneClick != null) {
                         WritableArray array = new WritableNativeArray();
                         array.pushString(qtyPicked);

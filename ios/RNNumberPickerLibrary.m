@@ -22,8 +22,12 @@ RCT_EXPORT_METHOD(createDialog:(NSDictionary *)indic createDialog:(RCTResponseSe
     //  NSString *cancelTextColor=indic[@"cancelTextColor"];
     
     qtyArray = [[NSMutableArray alloc] init];
-    for (int i = minValue; i <= maxValue; i+= 1) {
-        [qtyArray addObject:[NSString stringWithFormat:@"%d",i]];
+    if (indic[@"arrayValue"] && [indic[@"arrayValue"] isKindOfClass:[NSArray class]]) {
+        [qtyArray addObjectsFromArray:indic[@"arrayValue"]];
+    }else{
+        for (int i = minValue; i <= maxValue; i+= 1) {
+            [qtyArray addObject:[NSString stringWithFormat:@"%d",i]];
+        }
     }
     int selectedValue = 0;
     if(indic[@"selectedValue"]) {
