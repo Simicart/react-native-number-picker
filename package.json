@@ -1,6 +1,6 @@
 {
   "name": "react-native-number-picker-library",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Native number picker for both Android & iOS",
   "main": "index.js",
   "scripts": {
