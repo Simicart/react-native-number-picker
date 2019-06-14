@@ -58,14 +58,14 @@ RNNumberPickerLibrary.createDialog(
     if (error) {
       console.error(error);
     } else {
-      console.log(events);
+      console.log(data);
     }
   },
   (error, data) => {
     if (error) {
       console.error(error);
     } else {
-      console.log(events);
+      console.log(data);
     }
   }
 );
