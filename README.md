@@ -23,7 +23,7 @@ A Native number picker for both Android & iOS
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
 
 - Add `import com.reactlibrary.RNNumberPickerLibraryPackage;` to the imports at the top of the file
 - Add `new RNNumberPickerLibraryPackage()` to the list returned by the `getPackages()` method
