@@ -16,9 +16,9 @@ RCT_EXPORT_METHOD(createDialog:(NSDictionary *)indic createDialog:(RCTResponseSe
     int maxValue=[indic[@"maxValue"] intValue];
     onDoneClick = doneCallback;
     onCancelClick = cancelCallback;
-    //  NSString *doneText=indic[@"doneText"];
+    NSString *doneText = indic[@"doneText"];
     //  NSString *doneTextColor=indic[@"doneTextColor"];
-    //  NSString *cancelText=indic[@"cancelText"];
+    NSString *cancelText = indic[@"cancelText"];
     //  NSString *cancelTextColor=indic[@"cancelTextColor"];
     
     qtyArray = [[NSMutableArray alloc] init];
@@ -35,6 +35,15 @@ RCT_EXPORT_METHOD(createDialog:(NSDictionary *)indic createDialog:(RCTResponseSe
     }
     
     ActionSheetStringPicker* qtyPicker = [[ActionSheetStringPicker alloc]initWithTitle:@"" rows:qtyArray initialSelection:selectedValue target:self successAction:@selector(didSelectValue:element:) cancelAction:@selector(cancelActionSheet:) origin:self];
+    
+    if (doneText) {
+        [qtyPicker setDoneButton:[[UIBarButtonItem alloc] initWithTitle:doneText style:UIBarButtonItemStylePlain target:nil action:nil]];
+    }
+    
+    if (cancelText) {
+        [qtyPicker setCancelButton:[[UIBarButtonItem alloc] initWithTitle:cancelText style:UIBarButtonItemStylePlain target:nil action:nil]];
+    }
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         [qtyPicker showActionSheetPicker];
     });
