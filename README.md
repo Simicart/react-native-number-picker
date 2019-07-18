@@ -49,9 +49,9 @@ RNNumberPickerLibrary.createDialog(
     minValue: 0,
     maxValue: 100,
     selectedValue: 10,
-    doneText: "Done", // only for Android
+    doneText: "Done",
     doneTextColor: "#000000", // only for Android
-    cancelText: "Cancel", // only for Android
+    cancelText: "Cancel",
     cancelTextColor: "#000000" // only for Android
   },
   (error, data) => {
