@@ -2,7 +2,9 @@
 
 [![npm version](https://img.shields.io/npm/v/react-native-number-picker-library.svg?style=flat-square)](https://www.npmjs.com/package/react-native-number-picker-library) <a><img src="https://david-dm.org/crabbynguyen/react-native-number-picker.svg?style=flat-square" alt="dependency status"></a>
 
-A Native number picker for both Android & iOS
+A Native number picker for both Android & iOS.
+
+iOS is using [ActionSheetPicker-3.0](http://skywinder.github.io/ActionSheetPicker-3.0/)
 
 ## Getting started
 
